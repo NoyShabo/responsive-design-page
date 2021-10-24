@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container main-container">
+            <div class="container-mobile">
+                <a href="#" class="logo">Blogin<span>.</span></a>
+                <button class="nav-bar-btn" onclick="toggleMenu()"></button>
+            </div>
+            <nav>
+                <ul class="nav-container">
+                    <li>
+                        <a href="#" class="selected">Journal</a>
+                        <ul class="journal-ul">
+                            <li><a href="#">October 2016</a></li>
+                            <li><a href="#">January 2017</a></li>
+                            <li><a href="#">April 2017</a></li>
+                            <li><a href="#">Juli 2017</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">About</a></li>
+                    <li>
+                        <a href="#">Work</a></li>
+                    <li>
+                        <a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="shadow-lock-screen" onclick="toggleMenu()"></div>
+    <main class="main-container">
+        <div class="card">
+            <img src="./img/001.png" alt="">
+            <div class="card-contant">
+                <h2>DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <button>Continue Reading &nbsp;</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/002.png" alt="">
+            <div class="card-contant">
+                <h2>DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <button>Continue Reading &nbsp;</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./img/003.png" alt="">
+            <div class="card-contant">
+                <h2>DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
+                <button>Continue Reading &nbsp;</button>
+            </div>
+        </div>
+
+        <div class="pagenation">
+            <h4> &#8592; &nbsp; PREVIOUS</h4>
+            <h4>NEXT &nbsp; &#8594; </h4>
+        </div>
+    </main>
+
+    <footer>
+        <a href="#" class="logo">Blogin<span>.</span></a>
+        <small>&copy; 2014 Blogin.com  -  All Rights Reserved  -  Find more free Templates at <span>Pixelhint.com</span></small>
+        <ul class="clear-ul social-network">
+            <li>
+                <a href="" class="facebook"></a>
+            </li>
+            <li>
+                <a href="" class="twiter"></a>
+            </li>
+            <li>
+                <a href="" class="be"></a>
+            </li>
+            <li>
+                <a href="" class="ball"></a>
+            </li>
+        </ul>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('manu-open');
+        }
+    </script>
+
+</body>
+
+</html>
