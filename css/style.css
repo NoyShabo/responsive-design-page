@@ -261,7 +261,8 @@ footer .logo {
     content: '\f17d';
 }
 
-.shadow-lock-screen {
+.shadow-lock-screen,
+.shadow-lock-modal {
     position: fixed;
     top: 0;
     right: 0;
@@ -280,8 +281,102 @@ body.manu-open .shadow-lock-screen {
     pointer-events: auto;
 }
 
+body.open-modal .shadow-lock-modal {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 small {
     text-align: center;
+}
+
+.journal-ul a {
+    padding: 10px;
+}
+
+.modal-sign-up {
+    position: fixed;
+    width: 70vw;
+    height: fit-content;
+    background-color: #477c39;
+    color: aliceblue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    display: none;
+    z-index: 3;
+    transition: display 0.3s;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-sign-up>* {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+form button {
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    font-family: Lato-Bold;
+    font-size: 1.2rem;
+    border-radius: 50px 0 50px 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 10px;
+    transition: background-color 0.4s, font-size 0.3s;
+}
+
+form button:hover {
+    background-color: rgb(150, 245, 106);
+    font-size: 1.4rem;
+}
+
+.modal-sign-up h2 {
+    font-family: Lato-Bold;
+    font-size: 2rem;
+    color: aliceblue;
+    padding-top: 20px;
+}
+
+.modal-sign-up p {
+    /* padding: 5px 20px; */
+    font-size: 1.2rem;
+}
+
+.mail {
+    font-family: Lato-bold;
+    font-size: 1.2rem;
+    /* padding: 20px; */
+}
+
+input {
+    border-radius: 10px;
+    height: 30px;
+    width: 200px;
+    font-family: Lato-regular;
+    display: block;
+    margin: 10px auto;
+}
+
+.close::before {
+    font-family: symbols;
+    content: '\f057';
+    font-size: 2rem;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+
+body.open-modal .modal-sign-up {
+    display: flex;
 }
 
 
@@ -297,7 +392,7 @@ small {
         position: fixed;
         top: 0;
         right: 0;
-        background: yellowgreen;
+        background-color: #292929;
         flex-direction: column;
         width: 250px;
         height: 100%;
@@ -343,6 +438,10 @@ small {
 }
 
 @media (min-width:740px) {
+    .modal-sign-up {
+        width: 600px;
+        /* height: 80vh; */
+    }
     .card {
         display: block;
         padding-inline-end: 30px;
@@ -390,25 +489,3 @@ small {
         object-fit: unset;
     }
 }
-
-
-/* 
-@media only screen and (max-width:740px) {
-    html {
-        font-size: 20px;
-    }
-    .card {
-        max-width: 730px;
-        display: block;
-    }
-    .header-container ul {
-        max-width: 740px;
-    }
-    .main-container {
-        max-width: 740px;
-    }
-    .nav-container {
-        position: absolute;
-        display: ;
-    }
-} */

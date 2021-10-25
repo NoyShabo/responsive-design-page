@@ -39,6 +39,7 @@
     </header>
 
     <div class="shadow-lock-screen" onclick="toggleMenu()"></div>
+    <div class="shadow-lock-modal" onclick="tpggleModalInfo()"></div>
     <main class="main-container">
         <div class="card">
             <img src="./img/001.png" alt="">
@@ -46,7 +47,7 @@
                 <h2>DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <button>Continue Reading &nbsp;</button>
+                <button onclick="tpggleModalInfo()">Continue Reading &nbsp;</button>
             </div>
         </div>
         <div class="card">
@@ -55,7 +56,7 @@
                 <h2>DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <button>Continue Reading &nbsp;</button>
+                <button onclick="tpggleModalInfo()">Continue Reading &nbsp;</button>
             </div>
         </div>
         <div class="card">
@@ -64,7 +65,7 @@
                 <h2>DUIS AUTE IRURE DOLOR IN HENDERIT IN VOLUPTATE.</h2>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
                 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                <button>Continue Reading &nbsp;</button>
+                <button onclick="tpggleModalInfo()">Continue Reading &nbsp;</button>
             </div>
         </div>
 
@@ -93,9 +94,23 @@
         </ul>
     </footer>
 
+    <div class="modal-sign-up">
+        <div class="close" onclick="tpggleModalInfo()"></div>
+        <form>
+            <h2>Sign Up</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <label for="mail" class="mail">For more information enter your email:</label>
+            <input type="email" name="mail" id="mail" placeholder="example@mail.com">
+            <button type="submit" onclick="tpggleModalInfo()">Submit</button>
+        </form>
+    </div>
     <script>
         function toggleMenu() {
             document.body.classList.toggle('manu-open');
+        }
+
+        function tpggleModalInfo() {
+            document.body.classList.toggle('open-modal');
         }
     </script>
 
